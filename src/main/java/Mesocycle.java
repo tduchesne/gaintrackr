@@ -5,5 +5,5 @@ import java.util.List;
  *
  * @param weeks A list of all weeks in the mesocycle.
  */
-public record Mesocycle(List<Week> weeks) {
+public record Mesocycle(String name, List<Week> weeks) {
 }

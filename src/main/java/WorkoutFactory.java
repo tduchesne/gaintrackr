@@ -72,6 +72,6 @@ public class WorkoutFactory {
         weeks.add(new Week(3, days));
         weeks.add(new Week(4, days));
 
-        return new Mesocycle(weeks);
+        return new Mesocycle("Mesocycle test", weeks);
     }
 }

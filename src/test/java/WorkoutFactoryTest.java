@@ -9,6 +9,7 @@ public class WorkoutFactoryTest {
 
         Mesocycle mesocycle = WorkoutFactory.createSampleMesocycle();
         assertNotNull(mesocycle, "The mesocycle should not be null.");
+        assertEquals(mesocycle.name(), "Mesocycle test", "Mesocycle should be named \"Mesocycle test\"");
         assertEquals(4, mesocycle.weeks().size(), "The mesocycle should contain 4 weeks.");
         Week firstWeek = mesocycle.weeks().get(0);
         assertEquals(3, firstWeek.days().size(), "The first week should contain 3 days.");
